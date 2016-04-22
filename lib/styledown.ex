@@ -3,7 +3,8 @@ defmodule Styledown do
   Elixir integration of Styledown.
   """
 
-  @js_source Path.join(~w(#{File.cwd!} vendor styledown.js))
+  @external_resource js_source = Path.join(~w(#{File.cwd!} vendor styledown.js))
+  @js_source js_source
 
   @doc ~S"""
   Returns a string parsed by Styledown.
