@@ -1,4 +1,6 @@
-# Styledown Elixir
+# Styledown Elixir 
+
+[![Build Status](https://semaphoreci.com/api/v1/victorsolis/styledown_ex/branches/master/badge.svg)](https://semaphoreci.com/victorsolis/styledown_ex)
 
 Elixir integration of [Styledown](https://github.com/styledown/styledown)
 
