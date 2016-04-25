@@ -41,7 +41,6 @@ $ mix test
 ```
 
 ## License
-[MIT](https://github.com/styledown/styledown_ex/blob/master/LICENSE)
 
-Copyright 2016, [Styledown](https://github.com/orgs/styledown/people)
+Copyright 2016, Victor Solis. Released under the [MIT](https://github.com/styledown/styledown_ex/blob/master/LICENSE) license.
 
