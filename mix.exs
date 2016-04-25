@@ -37,8 +37,7 @@ defmodule Styledown.Mixfile do
       maintainers: ["Victor Solis"],
       licenses: ["MIT"],
       links: %{
-        "GitHub" => "https://github.com/styledown/styledown_ex",
-        "Docs" => "http://hexdocs.pm/styledown"
+        "GitHub" => "https://github.com/styledown/styledown_ex"
       }
     ]
   end

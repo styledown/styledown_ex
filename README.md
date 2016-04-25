@@ -1,4 +1,4 @@
-# StyledownEx
+# Styledown Elixir
 
 Elixir integration of [Styledown](https://github.com/styledown/styledown)
 
@@ -6,7 +6,7 @@ Elixir integration of [Styledown](https://github.com/styledown/styledown)
 
 ```elixir
 def deps do
-  [{:styledown_ex, "~> 0.0.1"}]
+  [{:styledown, "~> 0.0.1"}]
 end
 ```
 
@@ -15,6 +15,15 @@ end
 ```elixir
 iex> Styledown.parse("### hi")
 "<section class=\"sg-block sg-section-hi\">\n  <h3 id=\"hi\" class=\"sg\">hi</h3>\n</section>"
+```
+
+## Documentation
+
+The documentation is available [online](https://hexdocs.pm/styledown) and within the Styledown module. To build the
+docs locally:
+
+```shell
+$ MIX_ENV=docs mix docs
 ```
 
 ## Contributing
