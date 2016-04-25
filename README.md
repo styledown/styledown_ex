@@ -8,7 +8,7 @@ Elixir integration of [Styledown](https://github.com/styledown/styledown)
 
 ```elixir
 def deps do
-  [{:styledown, "~> 0.0.1"}]
+  [{:styledown, "~> 0.0.2"}]
 end
 ```
 

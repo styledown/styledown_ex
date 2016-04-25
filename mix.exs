@@ -1,7 +1,7 @@
 defmodule Styledown.Mixfile do
   use Mix.Project
 
-  @version "0.0.1"
+  @version "0.0.2"
 
   def project do
     [
@@ -38,7 +38,8 @@ defmodule Styledown.Mixfile do
       licenses: ["MIT"],
       links: %{
         "GitHub" => "https://github.com/styledown/styledown_ex"
-      }
+      },
+      files: ["lib", "vendor", "mix.exs", "README*", "LICENSE*"]
     ]
   end
 
