@@ -1,20 +1,13 @@
-# StyledownEx
+# Styledown
 
-**TODO: Add description**
+Elixir integration of [Styledown](https://github.com/styledown/styledown)
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+Add styledown_ex to your list of dependencies in `mix.exs`:
 
-  1. Add styledown_ex to your list of dependencies in `mix.exs`:
-
-        def deps do
-          [{:styledown_ex, "~> 0.0.1"}]
-        end
-
-  2. Ensure styledown_ex is started before your application:
-
-        def application do
-          [applications: [:styledown_ex]]
-        end
-
+```elixir
+def deps do
+  [{:styledown_ex, "~> 0.0.1"}]
+end
+```
