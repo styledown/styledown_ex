@@ -38,7 +38,8 @@ defmodule Styledown.Mixfile do
       licenses: ["MIT"],
       links: %{
         "GitHub" => "https://github.com/styledown/styledown_ex"
-      }
+      },
+      files: ["lib", "vendor", "mix.exs", "README*", "LICENSE*"]
     ]
   end
 
