@@ -1,4 +1,4 @@
-# Styledown
+# StyledownEx
 
 Elixir integration of [Styledown](https://github.com/styledown/styledown)
 
