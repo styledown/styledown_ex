@@ -1,6 +1,7 @@
 # Styledown Elixir
 
-[![Build Status](https://semaphoreci.com/api/v1/victorsolis/styledown_ex/branches/master/badge.svg)](https://semaphoreci.com/victorsolis/styledown_ex)
+[![Build Status](https://semaphoreci.com/api/v1/victorsolis/styledown_ex/branches/master/shields_badge.svg)](https://semaphoreci.com/victorsolis/styledown_ex)
+[![Hex.pm](https://img.shields.io/hexpm/v/styledown.svg?maxAge=2592000?style=flat-square)]()
 
 Elixir integration of [Styledown](https://github.com/styledown/styledown)
 
