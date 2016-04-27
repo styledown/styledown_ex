@@ -7,30 +7,39 @@ defmodule Styledown do
   @js_source js_source
 
   @doc ~S"""
-  Returns a string parsed by Styledown.
+  Takes a string or a list of files and returns a string parsed by the
+  Styledown Javascript library.
 
   ## Example
 
       iex> Styledown.parse("### hi")
       "<section class=\"sg-block sg-section-hi\">\n  <h3 id=\"hi\" class=\"sg\">hi</h3>\n</section>"
-  """
-  def parse(code, opts \\ [])
 
-  def parse([h|_t] = code, opts) when is_binary(h) do
-    code
+  Given you have directory named `stylesheets` with the files `app.css` and
+  `config.md`:
+
+      Path.wildcard("stylesheets/*.{css,md}")
+      |> Styledown.parse
+      |> File.write!("styledown.html")
+
+  """
+  def parse(content, opts \\ [])
+
+  def parse([h|_t] = content, opts) when is_binary(h) do
+    content
     |> Enum.map(&(%{"name" => &1, "data" => File.read!(&1)}))
     |> do_parse(opts)
   end
 
-  def parse(code, opts), do: do_parse(code, opts)
+  def parse(content, opts), do: do_parse(content, opts)
 
-  defp do_parse(code, opts) do
+  defp do_parse(content, opts) do
     opts = Map.new(opts, &(&1))
-    Execjs.call context, "Styledown.parse", [code, opts]
+    Execjs.call context, "Styledown.parse", [content, opts]
   end
 
   @doc """
-  Returns the styledown.js version.
+  Returns the version of the bundled Styledown Javascript library.
 
   ## Example
 
